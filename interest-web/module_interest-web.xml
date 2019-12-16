@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_interest-web" default="compile.module.interest-web">
+  <dirname property="module.interest-web.basedir" file="${ant.file.module_interest-web}"/>
+  
+  <property name="module.jdk.home.interest-web" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.interest-web" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.interest-web" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.interest-web" value="-encoding GBK -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="interest-web.output.dir" value="undefined"/>
+  <property name="interest-web.testoutput.dir" value="undefined"/>
+  
+  <path id="interest-web.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="interest-web.module.production.classpath">
+    <path refid="${module.jdk.classpath.interest-web}"/>
+  </path>
+  
+  <path id="interest-web.runtime.production.module.classpath"/>
+  
+  <path id="interest-web.module.classpath">
+    <path refid="${module.jdk.classpath.interest-web}"/>
+  </path>
+  
+  <path id="interest-web.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.interest-web">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.interest-web">
+    <patternset refid="excluded.from.module.interest-web"/>
+  </patternset>
+  
+  
+  <target name="compile.module.interest-web" depends="compile.module.interest-web.production,compile.module.interest-web.tests" description="Compile module interest-web"/>
+  
+  <target name="compile.module.interest-web.production" depends="register.custom.compilers" description="Compile module interest-web; production classes"/>
+  
+  <target name="compile.module.interest-web.tests" depends="register.custom.compilers,compile.module.interest-web.production" description="compile module interest-web; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.interest-web" description="cleanup module">
+    <delete dir="${interest-web.output.dir}"/>
+    <delete dir="${interest-web.testoutput.dir}"/>
+  </target>
+</project>

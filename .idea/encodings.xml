@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/interest-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-bbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-blog" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interest-cloud/interest-zuul" charset="UTF-8" />
+  </component>
+</project>

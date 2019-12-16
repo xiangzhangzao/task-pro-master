@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="interest-auth" />
+        <module name="interest-bbs" />
+        <module name="interest-blog" />
+        <module name="interest-common" />
+        <module name="interest-eureka" />
+        <module name="interest-message" />
+        <module name="interest-user" />
+        <module name="interest-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="interest-auth" target="1.8" />
+      <module name="interest-bbs" target="1.8" />
+      <module name="interest-blog" target="1.8" />
+      <module name="interest-cloud" target="1.8" />
+      <module name="interest-common" target="1.8" />
+      <module name="interest-eureka" target="1.8" />
+      <module name="interest-message" target="1.8" />
+      <module name="interest-user" target="1.8" />
+      <module name="interest-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="interest-auth" options="-parameters" />
+      <module name="interest-bbs" options="-parameters" />
+      <module name="interest-blog" options="-parameters" />
+      <module name="interest-common" options="-parameters" />
+      <module name="interest-eureka" options="-parameters" />
+      <module name="interest-message" options="-parameters" />
+      <module name="interest-user" options="-parameters" />
+      <module name="interest-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

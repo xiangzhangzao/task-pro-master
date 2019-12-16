@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestAuthApplication<interest-auth>",
+            "request": "launch",
+            "mainClass": "com.interest.auth.InterestAuthApplication",
+            "projectName": "interest-auth"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestBbsApplication<interest-bbs>",
+            "request": "launch",
+            "mainClass": "com.interest.bbs.InterestBbsApplication",
+            "projectName": "interest-bbs"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestBlogApplication<interest-blog>",
+            "request": "launch",
+            "mainClass": "com.interest.blog.InterestBlogApplication",
+            "projectName": "interest-blog"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestEurekaApplication<interest-eureka>",
+            "request": "launch",
+            "mainClass": "com.interest.eureka.InterestEurekaApplication",
+            "projectName": "interest-eureka"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestMessageApplication<interest-message>",
+            "request": "launch",
+            "mainClass": "com.interest.message.InterestMessageApplication",
+            "projectName": "interest-message"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestUserApplication<interest-user>",
+            "request": "launch",
+            "mainClass": "com.interest.user.InterestUserApplication",
+            "projectName": "interest-user"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterestZuulApplication<interest-zuul>",
+            "request": "launch",
+            "mainClass": "com.interest.zuul.InterestZuulApplication",
+            "projectName": "interest-zuul"
+        }
+    ]
+}

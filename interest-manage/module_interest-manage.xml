@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_interest-manage" default="compile.module.interest-manage">
+  <dirname property="module.interest-manage.basedir" file="${ant.file.module_interest-manage}"/>
+  
+  <property name="module.jdk.home.interest-manage" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.interest-manage" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.interest-manage" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.interest-manage" value="-encoding GBK -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="interest-manage.output.dir" value="undefined"/>
+  <property name="interest-manage.testoutput.dir" value="undefined"/>
+  
+  <path id="interest-manage.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="interest-manage.module.production.classpath">
+    <path refid="${module.jdk.classpath.interest-manage}"/>
+  </path>
+  
+  <path id="interest-manage.runtime.production.module.classpath"/>
+  
+  <path id="interest-manage.module.classpath">
+    <path refid="${module.jdk.classpath.interest-manage}"/>
+  </path>
+  
+  <path id="interest-manage.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.interest-manage">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.interest-manage">
+    <patternset refid="excluded.from.module.interest-manage"/>
+  </patternset>
+  
+  
+  <target name="compile.module.interest-manage" depends="compile.module.interest-manage.production,compile.module.interest-manage.tests" description="Compile module interest-manage"/>
+  
+  <target name="compile.module.interest-manage.production" depends="register.custom.compilers" description="Compile module interest-manage; production classes"/>
+  
+  <target name="compile.module.interest-manage.tests" depends="register.custom.compilers,compile.module.interest-manage.production" description="compile module interest-manage; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.interest-manage" description="cleanup module">
+    <delete dir="${interest-manage.output.dir}"/>
+    <delete dir="${interest-manage.testoutput.dir}"/>
+  </target>
+</project>
